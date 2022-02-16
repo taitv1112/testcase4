@@ -18,14 +18,14 @@ public class City {
     @NotNull
     @Size(min = 3, max = 125,message = "around 3 to 125 characters")
     private String city_name;
-    @NotNull
-    @Min(0)
+    @NotNull(message = "around 3 to 125 characters")
+    @Min(value = 0,message = "Bigger 0")
     private double acreage;
     @NotNull
-    @Min(0)
+    @Min(value = 0,message = "Bigger 0")
     private double population;
     @NotNull
-    @Min(0)
+    @Min(value = 0,message = "Bigger 0")
     private double GDP;
     @NotNull
     private String description;
