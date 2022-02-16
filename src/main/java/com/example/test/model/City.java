@@ -20,13 +20,13 @@ public class City {
     private String city_name;
     @NotNull
     @Min(0)
-    private String acreage;
+    private double acreage;
     @NotNull
     @Min(0)
-    private String population;
+    private double population;
     @NotNull
     @Min(0)
-    private String GDP;
+    private double GDP;
     @NotNull
     private String description;
     @ManyToOne
